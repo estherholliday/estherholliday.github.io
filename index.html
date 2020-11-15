@@ -1,0 +1,213 @@
+<!doctype html>
+<!-- Basic page set up. source: https://www.sitepoint.com/a-basic-html5-template/ -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>estherholliday</title>
+	<meta name="description" content="esther holliday portfolio">
+	<meta name="author" content="esther holliday">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<script src="javascript/script.js"></script>
+	<div id="nav-bar">
+		<div class="header">
+			<div class="logo-home">
+				<!-- A tags. source https://www.w3schools.com/tags/tag_a.asp -->
+				<a href="index.html">
+				<img src="assets/logo.png">
+				</a>
+			</div>
+			<ul>
+				<li><button onclick="toggleComponents('home')">Projects</button></li>
+				<li><button onclick="toggleComponents('about')">About</button></li>
+				<li><a href="https://drive.google.com/file/d/1ywEw8umWshuRPImv5VRsuVC8onmp8QA8/view?usp=sharing">Resume</a></li>
+
+				<li>
+					<!-- Dark/Light mode toggle button 
+					CHANGE IMAGE. source: https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb -->
+					<div class="DarkModeSelector">
+						<a onclick="colorToggle()" class="toggle">
+							<img id="toggle-image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTg4IiBoZWlnaHQ9IjQwOCIgdmlld0JveD0iMCAwIDU4OCA0MDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjIwNCIgY3k9IjIwNCIgcj0iMTgxLjUiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjQ1Ii8+CjxjaXJjbGUgY3g9IjM4NCIgY3k9IjIwNCIgcj0iMjA0IiBmaWxsPSIjMTYxNjE4Ii8+Cjwvc3ZnPgo="></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
+
+	<div class="nav-adjust" id="home-component">
+		<div class="intro-home">  	
+			<div class="intro">
+				<h1>Hello there, I’m Esther. 💬</h1>
+				<p>I am a User Experience Researcher passionate about observing, listening, and understanding people and discovering their deepest needs. 
+					Currently working towards a B.F.A. in User Experience Design at the Savannah College of Art and Design (SCAD). 
+					Previously interned at Splunk's UX Research team in summer 2020.
+				</p>
+			</div>
+			<div class="emoticon-intro"> 
+				<img src="assets/emoticon.png">
+			</div>
+		</div>
+		
+		<div class="home-button">
+			<button class="scroll-button" onclick="arrowDown()">
+				scroll down
+				<div>
+				<i class="fa fa-chevron-down"></i>
+				</div>
+			</button>
+
+		</div>
+
+
+		<div class="projects">
+			<!-- Portfolio Gallery Grid -->
+
+			<div class="gallery">
+				<div class="thumbnail"> 
+					<a href="#token">
+						<img src="assets/token.png" alt="token">
+					</a>
+
+				</div>
+				<div class="thumbnail">
+					<a href="#cair"> 
+						<img src="assets/cair.png" alt="cair"> 
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="#memori"> 
+						<img src="assets/memori.png" alt="memori">
+					</a>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div class="home-button">
+			<button class="scroll-button" onclick="arrowUp()">
+				scroll up
+				<div>
+				<i class="fa fa-chevron-up"></i>
+				</div>
+			</button>
+
+		</div>
+		<!--SCROLL TO SPECIFIC PROJECT source: https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html -->
+		<div class="project-description" id="token">
+			<div>
+				<img src="assets/token-banner.png">
+			</div>
+			<div class="project-text">
+			<h1>
+				Token
+			</h1>
+			<h1>
+				Problem
+			</h1>
+			<p>
+				Current school discipline systems lack empathy and often leave students feeling confused and neglected, inevitably causing a cycle of negative behavior.  
+			</p>
+			<h1>
+				Solution
+			</h1>
+			<p>
+				Token is a tactile toolkit that facilitates a mutual
+				understanding between authority figures and
+				students during disciplinary conversations. Token
+				fosters a change in students’ behavior and
+				implements empathy into the institutional discipline
+				system.
+			</p>
+			</div>
+		</div>
+
+		<div class="project-description" id="cair">
+			<div>
+				<img src="assets/cair-banner.png">
+			</div>
+			<h1>
+				CAIR
+			</h1>
+			<p>
+				AI device that allows drivers to stay focused on the road.
+			</p>
+			<h1>
+				Problem
+			</h1>
+			<p>
+				Resulting in more than 1,000 injuries each day, distracted driving is the number one cause of car accidents in the United States.
+			</p>
+			<h1>
+				Solution
+			</h1>
+			<p>
+				CAIR uses Heads up Display (HUD), smart camera and an AI voice assistant that allows drivers to stay focused on the road.
+			</p>
+			
+		</div>
+
+		<div class="project-description" id="memori">
+			<div>
+				<img src="assets/memori-banner.png">
+			</div>
+			<h1>
+				Memori
+			</h1>
+			<h1>
+				Problem
+			</h1>
+			<p>
+				Memories have lost their significance and meaning because of instant documentation.  As people age, cognitive decline begins to cloud their memories and the need to reminisce, relive, and share their memories with friends and family increase. 
+			</p>
+			<h1>
+				Solution
+			</h1>
+			<p>
+				Memori is an immersive Virtual Reality platform that allows users to re-experience and share a memory.  Through a memory reconstruction process utilizing the power of storytelling, memories are recalled through conversation and sensory cues led by Flow, the system’s personalized voice assistant. 
+			</p>
+		</div>
+
+	
+
+	<div class="nav-adjust" id="about-component"> 
+		<div class="about-pic"> 
+			<img src="assets/aboutPic.png">
+		</div>
+		<div class="about-content">
+			<h1>Researcher, designer, and growing with experience.</h1>
+			<p>Hello! I’m a researcher, designer, and professional cellist. I was raised in Fairbanks Alaska and Hinesville, Georgia and after graduating with a bachelor’s in music performance in 2016, I embarked on my journey as a UX Researcher. I’m in my fnal year at SCAD (Savannah College of Art and Design), obtaining a B.F.A. in User Experience Design. 
+
+				Being half Korean, raised in a military family, and part of a lower-income community has shaped the way I view the world. Throughout my life, I’ve always observed, analyzed and empathized with people’s emotions. And as a classical cellist, I have been given the gift to share human emotion through music. During my last year in music school, I realized I wanted to do more than share from the stage. As a researcher, my goal is to understand the needs of others to create solutions that improve human interaction. 
+
+				Thank you for coming here and listening to my story!
+
+			</p>
+		</div>
+
+	</div>
+
+	<div> 
+
+
+		<div class="learn-more">
+
+
+		</div>
+
+
+		<div class="home-button">
+
+
+		</div>
+
+	</body>
+	</html>

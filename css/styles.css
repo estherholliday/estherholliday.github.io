@@ -1,0 +1,256 @@
+html {
+	scroll-behavior: smooth; /*scrolling is smooth instead of jolting*/
+}
+
+body {
+	background-color: white;
+
+}
+
+
+/*MENU BUTTONS*/
+
+/*source: https://www.w3schools.com/css/css3_buttons.asp*/
+button { 
+  background: none; 
+  display: inline-block;
+  font-family: Avenir, sans-serif;
+  font-size: 24px;
+  border: none;
+  color: black;
+}
+
+/*style clicked buttons. source: https://stackoverflow.com/questions/44263892/how-to-style-a-clicked-button-in-css/44264124*/
+button:hover {
+  color: purple;
+}
+
+button:focus { /*after clicked it makes it bold*/
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Horizontal Navigation Bar source: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+li { 
+  padding: 14px 25px;
+  display: inline-block;
+  font-family: Avenir, sans-serif;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+/*CSS links source: https://www.w3schools.com/css/css_link.asp*/
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover { /* color change for mouse over link */
+  color: purple;
+}
+
+
+/*HEADER (NAVIGATION) BAR*/
+.nav-adjust {
+	margin-top: 175px; 
+}
+
+#nav-bar {
+	position: fixed;
+	z-index: 999;
+	background-color: white;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid black;
+
+}
+/*even distribution of elements using flex a css trick source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+.header {	
+ 	font-family: Avenir, sans-serif;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	align-items: flex-end;
+
+ }
+
+.menu-projects {
+ 	background-color: none; 
+  	border: none;
+  	color: white;
+ }
+
+/*responsive images source:https://www.w3schools.com/css/css_rwd_images.asp*/
+.logo-home { /*logo*/
+ 	width: 75px;
+ 	height: auto;
+ 	padding: 8px 8px;
+ }
+
+/*LIGHT TO DARK MODE BUTTON*/
+
+.DarkModeSelector a { /*dark to light mode button */
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+    padding: 4px 8px;
+    
+ }
+
+img { /*toggle button*/
+  width: 100%;
+  height: auto;
+}
+
+/*SCROLL DOWN AND UP BUTTON*/
+
+.home-button { 
+ 	display: flex;
+ 	justify-content: center;
+ 	width: 100%;
+
+ }
+
+.scroll-button:focus { /*overrides the previous focus and retains it at 400*/
+ 	font-weight: 400;
+ 	
+ }
+
+/*INTRO PAGE */
+
+.intro-home {
+	display: flex;
+	flex-direction: row;
+}
+
+.intro {
+ 	display: flex;
+ 	flex-direction: column;
+ 	font-family: Avenir, sans-serif;
+ 	padding-left: 20vw;
+ 	padding-right: 5vw;
+ 	padding-top: 100px;
+ 	padding-bottom: 20px
+
+ }
+
+.emoticon-intro {
+ 	width: 1000px;
+	height: auto;
+ 	padding-right: 20vw;
+ 	padding-bottom: 300px;
+ 	padding-top: 40px;
+	
+ }
+
+/*ABOUT PAGE*/
+
+#about-component {
+	display: none;
+	flex-direction: row;
+}
+
+.about-content {
+	/*border: 1px solid black;
+	height: 350px;*/
+	/*used the above to initally block out where elements are placed*/
+	font-family: Avenir, sans-serif;
+ 	display: flex;
+ 	flex-direction: column;
+ 	display: justify;
+ 	justify-content: center;
+
+ 	padding-left: 5vw;
+ 	padding-right: 20vw;
+ 	padding-top: 10px;
+ 	padding-bottom: 175px;
+}
+
+.about-pic {
+	width: 2000px;
+	height: auto;
+	padding-left: 10vw;
+ 	padding-bottom: 10vw;
+ 	padding-top: 100px;
+
+}
+
+/*PROJECTS GRID*/
+
+.projects {
+	padding-right: 10vw;
+	padding-left: 10vw;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	column-gap: 20px;
+	row-gap: 20px; 
+	width: 100%;
+}
+/*Calls out a part of the class.*/
+/*source: https://www.w3schools.com/css/css_combinators.asp*/
+div.gallery {
+  padding: 5px; 
+  width: 100%;
+}
+
+.thumbnail:hover { /* Add a hover effect (blue shadow) */
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.thumbnail > a img{
+  border-radius: 4px;  /* Rounded border */
+}
+
+
+/*INDIVIDUAL PROJECTS: TOKEN, CAIR, MEMORI*/
+
+.project-description {
+	width: 100%;
+	height: 700px;
+	
+	font-family: Avenir, sans-serif;
+ 	display: flex;
+ 	flex-direction: column;
+ 	display: justify;
+ 	justify-content: center;
+ 	
+}
+.project-text {
+	padding-top: 40px;
+	padding-left: 150px;
+	padding-right: 200px;
+
+}
+
+#token {
+	padding-top: 100px;
+	width: 1800px;
+	height: auto;
+ 	padding-bottom: 40vw;
+
+}
+
+#cair {
+	width: 1800px;
+	height: auto;
+ 	padding-bottom: 40vw;
+}
+
+#memori {
+	width: 1800px;
+	height: auto;
+ 	padding-bottom: 40vw;
+}
