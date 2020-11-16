@@ -70,6 +70,7 @@ a:hover { /* color change for mouse over link */
 	top: 0;
 	width: 100%;
 	border-bottom: 1px solid black;
+	left: 0;
 
 }
 /*even distribution of elements using flex a css trick source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
@@ -146,7 +147,7 @@ img { /*toggle button*/
  	width: 1000px;
 	height: auto;
  	padding-right: 20vw;
- 	padding-bottom: 300px;
+ 	padding-bottom: 250px;
  	padding-top: 40px;
 	
  }
@@ -229,11 +230,13 @@ div.gallery {
  	
 }
 .project-text {
-	padding-top: 40px;
+	padding-top: 50px;
 	padding-left: 150px;
 	padding-right: 200px;
 	display: flex;
- 	flex-direction: column;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	align-items: flex;
 
 }
 
@@ -243,6 +246,15 @@ div.gallery {
 	height: auto;
  	padding-bottom: 40vw;
 
+}
+.token-title {
+	padding-left: 150px;
+
+
+}
+
+.paragraph-space {
+	width: 50%;
 }
 
 #cair {
